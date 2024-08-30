@@ -1,0 +1,287 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size:62.5%
+}
+
+html,body{
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.4rem;
+}
+
+header{
+   position: sticky;
+   top:0;
+   background: #fff;
+   margin:1rem;
+}
+
+nav{
+    
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+    max-width: 1200px;
+    margin:0 auto;
+
+}
+
+main{
+    max-width: 1200px;
+    margin:0 auto;
+    
+}
+
+nav h1{
+    font-size:2.8rem;
+    font-weight:700
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.5rem;
+}
+
+.nav-content{
+    font-weight:550;
+    font-size:2rem
+}
+
+nav ul li{
+    font-size: 1.8rem;
+    position: relative;
+    cursor:pointer;
+    transition: all 0.2s ease;
+
+}
+
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+    width: 100%; 
+}
+
+nav i {
+    font-size:2.2rem;
+    position: relative;
+    bottom:1.5px;
+}
+
+#icon-adjust{
+    position: relative;
+    bottom:2.2px;
+}
+
+#hero{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1.5rem;
+    
+}
+
+.hero-content h1{
+    font-size:7.3rem;
+    line-height: 1.1;
+    word-spacing: 2px;
+    font-weight:620
+}
+
+.hero-content h4{
+    font-size:2.5rem;
+    line-height: 1.1;
+    word-spacing: 2px;
+    font-weight:400
+
+}
+
+.hero-content h1,h4{
+    margin-left:2rem
+}
+
+.hero-image img{
+    border-radius: 5rem;
+    margin-right:2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.h-card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 1rem;
+    box-shadow: 0px 5px 4px rgba(221,221,221);
+    border:1px solid #e2e2e2;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-content{
+
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    gap:1.8rem
+
+}
+
+.status{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.status .read-btn{
+    all:unset;
+    font-weight:600;
+    position:relative;
+    cursor:pointer
+    
+}
+
+.status .read-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.status .read-btn:hover::after {
+    width: 100%; 
+}
+
+
+.card-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.v-card{
+    display:flex;
+    flex-direction: column-reverse;
+    max-width:320px;
+    box-shadow: 0px 5px 4px rgba(221,221,221);
+    border:1px solid #e2e2e2;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.v-card img{
+    width:100%;
+    height:100%
+}
+
+.h-card:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.02);
+}
+
+.v-card:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.02);
+}
+
+.hero-image:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.02);
+}
+
+#space{
+    margin-top:5rem
+}
+
+footer{
+  
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2.4rem;
+    max-width:1200px;
+    margin:0 auto;
+
+}
+
+footer ul{
+    font-size:2.4rem;
+    list-style: none;
+    display:flex;
+    gap:2rem;
+}
+
+
+/* Post */
+
+.banner-image img{
+    width:100%
+
+}
+
+.post h1{
+    font-size:3.6rem;
+    font-weight:550;
+    margin-bottom:2rem;
+}
+
+.post h3{
+    font-weight:550
+}
+
+.post hr{
+    margin:2rem 0;
+    
+}
+
+.about-author{
+    display:flex;
+    gap:1.5rem;
+    align-items: center;
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    margin:2rem;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
